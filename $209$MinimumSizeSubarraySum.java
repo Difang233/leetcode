@@ -1,4 +1,3 @@
-
 public class $209$MinimumSizeSubarraySum {
     public static void main(String[] args) {
         int[] nums = {2,3,1,2,4,3};
@@ -14,7 +13,7 @@ public class $209$MinimumSizeSubarraySum {
      * 1.每当窗口内的和大于等于target时，窗口尾部往前移动一位（相当于窗口缩小），同时更新最小长度
      * 2.每当窗口内的和小于target时，窗口头部向前移动一位
      * 3.重复执行上述步骤，直到窗口头部大于数组长度为止
-     * 时间复杂度：O(n) 最坏情况下每个元素操作两次，一次进入窗口，一次退出窗口
+     * 时间复杂度：O(n) 每个元素操作两次，一次进入窗口，一次退出窗口
      * 空间复杂度：O(1) 开辟常量个新的空间
      * @param target 目标数
      * @param nums 数组
