@@ -28,7 +28,7 @@ public class $0203$RemoveLinkedListElements {
         return prevHead.next;
     }
 
-    static ListNode genLinkedList(int[] nums){
+    public static ListNode genLinkedList(int[] nums){
         ListNode prevHead = new ListNode(0);
         ListNode cur = prevHead;
         for (int i = 0; i < nums.length; i++) {
@@ -39,7 +39,7 @@ public class $0203$RemoveLinkedListElements {
         return prevHead.next;
     }
 
-    static void printLinkedList(ListNode head){
+    public static void printLinkedList(ListNode head){
         LinkedList<Integer> integers = new LinkedList<>();
         while (head != null){
             integers.add(head.val);
